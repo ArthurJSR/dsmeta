@@ -49,12 +49,12 @@ public class Sale {
 		this.visited = visited;
 	}
 
-	public Integer getDealsInteger() {
-		return dealsInteger;
+	public Integer getDeals() {
+		return deals;
 	}
 
-	public void setDealsInteger(Integer dealsInteger) {
-		this.dealsInteger = dealsInteger;
+	public void setDeals(Integer dealsInteger) {
+		this.deals = dealsInteger;
 	}
 
 	public Double getAmount() {
@@ -72,6 +72,5 @@ public class Sale {
 	public void setDate(LocalDate date) {
 		this.date = date;
 	}
-	
 	
 }
