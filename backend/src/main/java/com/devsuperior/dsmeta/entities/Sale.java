@@ -17,7 +17,7 @@ public class Sale {
 	private Long id;
 	private String sellerName;
 	private Integer visited;
-	private Integer dealsInteger;
+	private Integer deals;
 	private Double amount;
 	private LocalDate date;
 	
