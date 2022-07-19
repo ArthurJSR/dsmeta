@@ -56,23 +56,55 @@ function SalesCard() {
                         </tr>
                     </thead>
                     <tbody>
-                        {sales.map(Sale => {
-                            return (
-                                <tr key={Sale.id}>
-                                    <td className="show992">{Sale.id}</td>
-                                    <td className="show576">{new Date(Sale.date).toLocaleDateString()}</td>
-                                    <td>{Sale.sellerName}</td>
-                                    <td className="show992">{Sale.visited}</td>
-                                    <td className="show992">{Sale.deals}</td>
-                                    <td>R$ {Sale.amount.toFixed(2)}</td>
-                                    <td>
-                                        <div className="dsmeta-red-btn-container">
-                                            <NotificationButton />
-                                        </div>
-                                    </td>
-                                </tr>
-                            )
-                        })}
+                        {
+                            sales.map(sale => {
+                                return (
+                                    <tr>
+                                        <td className="show992">{sale.id}</td>
+                                        <td className="show576">{sale.date}</td>
+                                        <td>{sale.sellerName}</td>
+                                        <td className="show992">{sale.deals}</td>
+                                        <td className="show992">{sale.visited}</td>
+                                        <td>R$ {sale.amount.toFixed(2)}</td>
+                                        <td>
+                                            <div className="dsmeta-red-btn-container">
+                                                <NotificationButton />
+                                            </div>
+                                        </td>
+                                    </tr>
+                                )
+                            })
+                        }
+                        <tr>
+                            <td className="show992">#341</td>
+                            <td className="show576">08/07/2022</td>
+                            <td>Anakin</td>
+                            <td className="show992">15</td>
+                            <td className="show992">11</td>
+                            <td>R$ 55300.00</td>
+                            <td>
+                                <div className="dsmeta-red-btn-container">
+                                    <div className="dsmeta-red-btn">
+                                        <NotificationButton />
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td className="show992">#341</td>
+                            <td className="show576">08/07/2023</td>
+                            <td>Anakin</td>
+                            <td className="show992">15</td>
+                            <td className="show992">11</td>
+                            <td>R$ 55300.00</td>
+                            <td>
+                                <div className="dsmeta-red-btn-container">
+                                    <div className="dsmeta-red-btn">
+                                        <NotificationButton />
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
                     </tbody>
 
                 </table>
